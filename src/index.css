@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-BLACK.TTF") format("truetype");
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-HEAVY.TTF") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-BOLD.TTF") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-SEMIBOLD.TTF") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-MEDIUM.TTF") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-REGULAR.TTF") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-LIGHT.TTF") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-THIN.TTF") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/fonts/SFPRODISPLAY-ULTRALIGHT.TTF") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "DeepHero";
+  src: url("/fonts/deephero-r9vpm.otf") format("opentype");
+}
+
+:root {
+  --white: #f4f4f4;
+  --dark-black: #1c1c1c;
+  --black: #252525;
+  --light-black: #f4f4f413;
+  --red: #f95c5c;
+  --blue: #abd2f9;
+  --purple: #8297ff;
+  --transition-purple: #899dff;
+  --light-purple: #a7b6ff;
+
+  --svg-black: #292929;
+  --svg-white: #eeeeee;
+  --font: "SFProDisplay", sans-serif;
+
+  --easing-bounce: cubic-bezier(0.03, 1.74, 0.72, 0.91);
+}
+
+* {
+  font-family: "SFProDisplay", sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+.dg.ac {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0 !important;
+  z-index: 999999999 !important;
+}
+
+/* *::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5c75f9 0%, #abd2f9 100%);
+ 
+} */
+
+::selection {
+  background-color: var(--purple);
+  color: var(--black);
+}

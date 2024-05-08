@@ -1,0 +1,32 @@
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 9999999999999999999999999999999999;
+  pointer-events: none;
+
+  transition: transform 0.3s ease-out,
+    width 0.3s cubic-bezier(0.8, 0.02, 0.23, 0.98),
+    height 0.3s cubic-bezier(0.8, 0.02, 0.23, 0.98),
+    background-color 0.3s cubic-bezier(0.8, 0.02, 0.23, 0.98);
+}
+
+.cursorHover {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  border: 2px solid #f0f3ff;
+  box-shadow: 0px 0px 15px 2px #5c76f9ab;
+  backdrop-filter: saturate(250%) contrast(110%);
+}
+
+@media screen and (max-width: 1024px) {
+  .cursor {
+    display: none;
+  }
+}
